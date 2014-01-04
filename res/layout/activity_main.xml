@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:menudrawer="http://schemas.android.com/apk/res-auto" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+<!--     <Button -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:text="hehehe" -->
+<!--         /> -->
+    
+    <com.wf.android.ownview.MenuDrawer
+        android:id="@+id/menudrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        menudrawer:drawer_orientation="horizontal"
+        menudrawer:parent_text="Parent"
+        menudrawer:parent_background_image="@drawable/parent_button_drawable"
+        menudrawer:parent_margin="5dp"
+        menudrawer:button_width="100dp"
+        menudrawer:button_height="100dp"
+        menudrawer:child_background_image="@drawable/child_button_drawable"
+        menudrawer:child_margin="3dp">
+        <com.wf.android.ownview.MenuDrawerItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            menudrawer:child_text="Item 1">
+        </com.wf.android.ownview.MenuDrawerItem>
+        <com.wf.android.ownview.MenuDrawerItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            menudrawer:child_text="Item 2">
+        </com.wf.android.ownview.MenuDrawerItem>
+<!--         <com.wf.android.ownview.MenuDrawerItem -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             menudrawer:child_text="Item 3"> -->
+<!--         </com.wf.android.ownview.MenuDrawerItem> -->
+<!--         <com.wf.android.ownview.MenuDrawerItem -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             menudrawer:child_text="Item 4"> -->
+<!--         </com.wf.android.ownview.MenuDrawerItem> -->
+<!--         <com.wf.android.ownview.MenuDrawerItem -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             menudrawer:child_text="Item 5"> -->
+<!--         </com.wf.android.ownview.MenuDrawerItem> -->
+<!--         <com.wf.android.ownview.MenuDrawerItem -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             menudrawer:child_text="Item 6"> -->
+<!--         </com.wf.android.ownview.MenuDrawerItem> -->
+<!--         <com.wf.android.ownview.MenuDrawerItem -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             menudrawer:child_text="Item 7"> -->
+<!--         </com.wf.android.ownview.MenuDrawerItem> -->
+    </com.wf.android.ownview.MenuDrawer>
+
+</RelativeLayout>

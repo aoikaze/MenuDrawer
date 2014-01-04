@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="menudrawer">
+        
+        <attr name="button_width" format="dimension" />
+        <attr name="button_height" format="dimension" />
+        <attr name="button_size_orientation" >
+            <enum name="wrap" value="0" />
+            <enum name="predefined" value="1" />
+        </attr>
+        <attr name="drawer_orientation" >
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+       	</attr>
+        <attr name="parent_text" format="string" />
+        <attr name="parent_icon" format="reference" />
+        <attr name="parent_background_image" format="reference" />
+        <attr name="parent_background_color" format="color" />
+        <attr name="parent_margin" format="dimension" />
+        <attr name="child_text" format="string" />
+        <attr name="child_icon" format="reference" />
+        <attr name="child_background_image" format="reference" />
+        <attr name="child_background_color" format="color" />
+        <attr name="child_margin" format="dimension" />
+    </declare-styleable>
+</resources>
